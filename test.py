@@ -3,8 +3,15 @@ a, b = map(int, input("숫자를 입력하세요:").split())
 # 1씩 작아지기
 for i in range(10, 0, -1):
     print(i)
+#>>10 9 8 7 6 5 4 3 2 1
+
+# 2씩 작아지기
+for i in range(10,0,-2):
+    print(i)
+#>>10 8 6 4 2
 
 #무한반복 멈추기기
+i = 1
 while True:
     print(i)
     if i == 10:
@@ -19,12 +26,15 @@ for i in range(1, 11):
 
 
 #for-else문
-#for문을 다 돌면 else문 출력력for i in range(1,11):
+#for문이 정상적으로 종료되면 else문 출력
+#for문이 중간에break당하면 else출력 X
+for i in range(1,11):
     print(i)
     if i>15:
         break
 else:
-    print(i)
+    print(11)
+#>>1 2 3 4 5 6 7 8 9 10 11
 
 #대문자 만들기,원본이 바뀌는 건 아님
 msg = "It is Time"
@@ -261,6 +271,7 @@ for x in a:
 # 0 0 0
 # 0 0 0
 
-#함수 만들기
+
+
 
 
