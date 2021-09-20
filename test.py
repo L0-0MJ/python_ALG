@@ -271,7 +271,20 @@ for x in a:
 # 0 0 0
 # 0 0 0
 
+#최대값
+item = [5, 13, 66, 12, 78, 1, 78]
+max(item)
+##78
 
+#역순으로
+num=789
+int(str(num)[::-1])
 
-
-
+##역순 2
+x = int(input())
+res = 0
+while x>0:
+    t = x%10
+    res = res*10+t
+    x = x//10
+print(res)
